@@ -32,18 +32,23 @@ p { margin-bottom: 1.5em; }
   gap: 2rem;
   margin-bottom: 3rem;
 }
-/* Portrait container: fixed width */
+/* Portrait container: fixed square */
 .hero .portrait {
-  flex: 0 0 500px;    /* make the container 250px wide */
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Portrait image: scale to fit the container */
+/* Portrait image: cover the circle */
 .hero .portrait img {
-  width: 100%;         /* fill that 250px container */
-  max-width: 500px;    /* never exceed 250px */
-  height: auto;
-  border-radius: 4px;
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
 }
 .hero .intro {
   flex: 1 1 400px;
