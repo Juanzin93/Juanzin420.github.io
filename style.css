@@ -34,7 +34,7 @@ p { margin-bottom: 1.5em; }
 }
 /* Portrait container: fixed width */
 .hero .portrait {
-  flex: 0 0 250px;    /* make the container 250px wide */
+  flex: 0 0 500px;    /* make the container 250px wide */
 }
 
 /* Portrait image: scale to fit the container */
