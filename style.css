@@ -32,11 +32,15 @@ p { margin-bottom: 1.5em; }
   gap: 2rem;
   margin-bottom: 3rem;
 }
+/* Portrait container: fixed width */
 .hero .portrait {
-  flex: 1 1 300px;
+  flex: 0 0 250px;    /* make the container 250px wide */
 }
+
+/* Portrait image: scale to fit the container */
 .hero .portrait img {
-  width: 100%;
+  width: 100%;         /* fill that 250px container */
+  max-width: 250px;    /* never exceed 250px */
   height: auto;
   border-radius: 4px;
   object-fit: cover;
